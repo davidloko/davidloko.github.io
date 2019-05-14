@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Resumo Bootstrap</title>
+
+	<!-- FAVIICON -->
+	<link rel="icon" href="imagens/favicon-16x16.png" sizes="16x16" type="image/png">
+	<!-- CSS Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+</head>
+<body>
+	<header class="jumbotron text-center bg-success" style="background:url(imagens/arvore.jpg); background-attachment: fixed;">
+	<h1 style="color: white;">Olá Mundo Maravilhoso do Bootstrap</h1>
+	<p style="color: white;">Este é um exemplo de Jumbotron</p>
+	</header>
+
+	<!-- Conteúdo Principal -->
+	<main class="container">
+		<section class="row">
+			<article class="col">
+				<h2 class="text-primary">Artigo 1</h2>
+				<div id="art1"><p class="bg-primary">Este é o artigo um!!</p>
+				<img src="imagens/ceu.jpg" class="img-thumbnail"></div>
+				<button class="btn-primary" data-toggle="collapse" 
+			data-target="#art1" >Mostrar Artigo 1</button>
+			</article>
+			
+			<article  class="col">
+				<h2 class="text-success">Artigo 2</h2>
+				
+				<div id="art2"><p class="bg-success">Este é o artigo dois!!</p>
+				<img src="imagens/arvore.jpg" class="img-thumbnail"></div>
+				<button class="btn-success" data-toggle="collapse" 
+			data-target="#art2" >Mostrar Artigo 2</button>
+			</article>
+			
+			<article  class="col">
+				<h2 class="text-danger">Artigo 3</h2>
+								<div id="art3"><p class="bg-danger">Este é o artigo três!!</p>
+				<img src="imagens/morro.jpg" class="img-thumbnail"></div>
+				<button class="btn-danger" data-toggle="collapse" 
+			data-target="#art3" >Mostrar Artigo 3</button>
+
+			</article>
+
+		</section>
+		<section>
+			<h2>Imagens</h2>
+			<img src="imagens/morro.jpg" height="250" width="300" class="img-thumbnail img-fluid">
+			<img src="imagens/arvore.jpg" height="250" width="300" class="img-thumbnail img-fluid">
+			<img src="imagens/ceu.jpg" height="250" width="300" class="img-thumbnail">
+		
+		</section>
+		<section>
+			<h2>Collapse</h2>
+
+			<button class="btn" 
+			data-toggle="collapse" 
+			data-target="#dracarys">
+		Mostrar e Esconder</button>
+			<div id="dracarys" class="collapse">Este texto aparece e desaparece!!</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</section>
+<h2>Corousel</h2>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="imagens/arvore.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="imagens/ceu.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="imagens/morro.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	</main>
+
+
+	<!-- JAVASCRIPT para o Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
