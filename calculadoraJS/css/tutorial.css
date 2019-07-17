@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(59, 22, 192);
+    color: rgb(236, 75, 241);
+}
+img{
+    display: block;
+    margin: 0 auto;
+}
+#div_central{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+}
