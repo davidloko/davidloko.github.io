@@ -38,5 +38,4 @@ function preload(){
   atropelou = loadSound('sons/colidiu.mp3');
   ponto = loadSound('sons/pontos.wav');
   trilha = loadSound('sons/trilha.mp3');
-  vitoria = loadSound('sons/Vaca_Louca.mp3');
 }
