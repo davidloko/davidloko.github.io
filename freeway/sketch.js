@@ -44,7 +44,6 @@ function  verificaVencedor(){
 }
 
 function vacaVenceu(){
-  vitoria.play();
   fill("lime");
   rect(0, 0,600, 400);
   textAlign(CENTER);
