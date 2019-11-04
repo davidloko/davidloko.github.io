@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Pac Man</title>
+    <link rel="icon" href="images/ghost.png">
+    <style>
+
+        p{
+            margin-left: 20px;
+        }
+        nav{
+           margin-left: 400px;
+        }
+        #seta{
+            font-size: 300%;
+            text-align: center;
+        }
+        .seta{
+            font-size: 200%;
+            text-align: center;
+        }
+
+    </style>    
+</head>
+<body>
+
+    <nav id="inicio" class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><strong>Pac Man</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#telaInicial">Tela Inicial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gameStart">Game Start</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gameOver">Game Over</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#win">Win</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="#paredes">Paredes</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="#ghosts">Ghost</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="#pacMan">Pac Man</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+    <div class="jumbotron">
+    <h1 style="text-align:center;">O Jogo Pac Man</h1>
+        <br>
+            <p>Pac-Man é um jogo eletrônico criado pelo Tōru Iwatani para a empresa Namco, e sendo distribuído para o mercado americano pela Midway Games.</p>
+        <br>
+            <p>O professor Tarcísio Nunes propos uma atividade para os alunos do AIPR 2019 onde deveriam escolher um jogo classico e recrialo no p5js.</p>
+            <p> Nosso grupo escolheu recriar o jogo do Pac-Man.</p>
+        <br>
+    </div>
+    <h3 id="telaInicial" style="margin-left: 25px;">Tela Inicial</h3>
+        <br>
+            <main class="container">
+                <tr> 
+                <img src="imagens/codigo_capa.png" mg-top="15px" width="500px" heigth="600px">
+                <tr>
+                <img src="imagens/capa.png" width="500px" heigth="450px">        
+            </main>
+        <br>
+            <p style="text-align: center;" class="seta"><a href="#inicio"> Voltar </a></p>   
+        <br>
+    <h3 id="gameStart" style="margin-left: 25px;">Game Start</h3>  
+        <br>
+        <p> Quando o jogo se inicia, esta é a primeira tela do game!. </p>
+        <br>
+            <main class="container">
+                <img src="imagens/jogo.png" width="500px" heigh="500px">
+            </main>      
+        <br>
+            <p> Para carregar a imagens do personagens e do layout, usamos este codigo!. </p>
+        <br>
+            <main class="container">
+                <img src="imagens/jogo_codigo.png">
+            </main>
+        <br>
+            <p style="text-align: center;" class="seta"><a href="#inicio"> Voltar </a></p> 
+        <br>
+    <h3 id="gameOver" style="margin-left: 25px;">Game Over</h3>
+        <br>
+            <p> Quando o personagem morre, não ha vidas restantes, é Game Over. </p>       
+        <br>
+            <main class="container">
+                <img src="imagens/fim_do_jogo.png" width="400px" height="400px">
+            </main>
+        <br>
+            <p> Este é o código da animação!. </p>
+        <br>
+            <main class="container">
+                <img src="imagens/fim_do_jogo_codigo.png" width="550px" height="500px">
+            </main>
+        <br>
+            <p style="text-align: center;" class="seta"><a href="#inicio"> Voltar </a></p> 
+        <br>
+    <h3 id="win" style="margin-left: 25px;">Win!</h3>
+        <br>
+            <p> Quando o jogador coleta todas as moedas, consegue a Win!. </p>
+        <br>
+            <main class="container">
+                <img src="imagens/tela_vencedora.png" width="550px" height="500px">
+            </main>
+        <br>    
+            <p> Este é o código da animação final do vencedor!. </p>
+        <br>
+            <main class="container">
+                <img src="imagens/codigo_vencedor.png" width="450px" height="400px">
+            </main>
+        <br>
+            <p style="text-align: center;" class="seta"><a href="#inicio"> Voltar </a></p> 
+        <br>
+        <h3 id="paredes" class="container"> Paredes </h3>
+        <br>
+            <p> Este é o elemento mais complexo do jogo!. </p>
+        <br>
+            <main class="container">
+                <img src="imagens/tijolinho.png" width="350px" height="300px">
+            </main>
+        <br>
+            <p> O código das Paredes. </p>
+                <p> Cada - representa uma Moeda!. </p>
+                <p> Cada * representa uma parede (bloco). </p> 
+                <p> As letras R, G, I e U representam os fantasma. </p>
+                <p> As duas letras D representam a saida do Fantasma do Centro. </p>
+                <p> As / representam os espaços em branco (onde não possuem objetos). </p>
+                <p> As quatro letra O representam as frutas que dão poder. </p>
+                <p> As letra P representa o Spam do Pac Man. </p>  
+        <br>
+            <main class="container">
+                <img src="imagens/plataforma.png" width="900px" height="400px">
+            </main>
+        <br>
+            <p style="text-align: center;" class="seta"><a href="#inicio"> Voltar </a></p> 
+        <br>
+    <h3 id="ghosts" class="container">Ghosts</h3>
+        <br>    
+            <p> Este é o código dos Fantasma, os Ghosts!. </p>
+        <br>
+            <main class="container">
+                <tr>
+                <img src="imagens/ghostFunction.PNG" width="500px" height="300px">
+                <tr>
+                <img src="imagens/ghost.png" width="200px" height="200px">
+            </main>
+        <br>
+            <p style="text-align: center;" class="seta"><a href="#inicio"> Voltar </a></p>
+        <br>
+            <h3 id="pacMan" class="container">Pac Man</h3>
+        <br>    
+            <p> Este é o código do Pac Man. </p>
+        <br>
+            <main class="container">
+                <tr>
+                <img src="imagens/pacman_codigo1.png" width="500px" height="490px">
+                <tr>
+                <img src="imagens/pacman_codigo2.png" width="500px" height="490px">
+                <br>
+                <img style="margin-left: 480px;" src="imagens/pacman.png" width="150px" height="150px">
+            </main>
+        <br>
+    <p id="seta" style="text-align: center;" class="seta"><a href="#inicio"> ⏫ </a></p>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ </body>
+</html>
