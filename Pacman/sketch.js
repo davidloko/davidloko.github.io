@@ -244,7 +244,7 @@ function pac(){
   pacman.show();
     textFont("Comic Sans MS");
     textSize(25);
-    rect(27, 1, 105, 30);
+    rect(27, 1, 120, 30);
     fill(0);
     text("Points: " + points, 30, 25);
     frameRate(5);
