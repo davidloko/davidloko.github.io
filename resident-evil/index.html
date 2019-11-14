@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="imagens/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Orbitron|Raleway|Josefin+Sans" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Resident Evil 2</title>
+	<style>
+		
+		ol#menu{list-style-type:none;
+    		width:1000px;
+    		margin:auto;
+    		position:fixed;
+    		margin-left:50%;
+    		left:-250px;
+    		top:33px;}
+
+    	ol{color:white;}
+
+    	#menu li{
+            float:left;
+    		background-color:transparent;
+            margin:20px;}
+
+    	#menu li a{text-decoration:none;
+    		padding:5px 5px;
+    		display:block;
+    		clear:both;
+    		color:white;}
+
+    	#menu li a:hover{ 
+            background-color:transparent;
+    		border:1px solid white;
+    		color:white;}
+
+    	#menu{
+    		font-size:30px;}
+
+        h1{
+            font-family: 'Orbitron', sans-serif;;
+            color:white;
+            font-size:60px;
+            }
+        #myVideo{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index:-1;}
+
+        .content{
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding:15px;
+            font-size:40px;
+            margin-left:110px;}
+
+        #logo{
+            width:400px;
+            height:100px;}
+
+        body{
+            margin-left:50px;
+            margin-top:30px;
+            }
+        p{
+            font-size:30px;
+            font-family: 'Josefin Sans', sans-serif;
+            }
+
+
+	</style>
+</head>
+<body>
+<ol id="menu">
+	<li><a href="armas.html">ARMAS</a></li>
+	<li><a href="personagens.html">PERSONAGENS</a></li>
+	<li><a href="sobre.html">HISTÓRIA</a></li>
+    <li><a href="http://www.capcom.com/us/"><img src="imagens/logo-capcom.png"></a></li>
+</ol>
+
+<div>
+    <video autoplay muted loop id="myVideo">
+    <source src="imagens/re.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+    <h1>O Remake</h1>
+    <p>A versão remasterizada do game de 1998.</p>
+</div>
+<img id="logo" src="imagens/logo.png">
+</body>
+</html>
